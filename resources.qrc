@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="main">
+    <file>img/main/qt</file>
+    <file>img/main/cut.hvif</file>
+    <file>img/main/Misc_Scroll.png</file>
+    <file>img/main/ruby.hvif</file>
+    <file>img/main/Qt.iom</file>
+  </qresource>
+</RCC>
