@@ -5,5 +5,8 @@
     <file>img/main/Misc_Scroll.png</file>
     <file>img/main/ruby.hvif</file>
     <file>img/main/Qt.iom</file>
+    <file>img/main/Misc_Birthday_Cake.png</file>
+    <file>img/main/Misc_R.I.P.png</file>
+    <file>img/main/Server_MediaAddonServer.png</file>
   </qresource>
 </RCC>

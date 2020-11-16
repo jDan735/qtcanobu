@@ -13,18 +13,21 @@ SOURCES += \
     aboutapp.cpp \
     aboutqt.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    result.cpp
 
 HEADERS += \
     aboutapp.h \
     aboutqt.h \
-    mainwindow.h
+    mainwindow.h \
+    result.h
     aboutapp.h
 
 FORMS += \
     aboutqt.ui \
     mainwindow.ui \
-    aboutapp.ui
+    aboutapp.ui \
+    result.ui
 
 RESOURCES += \
     resources.qrc
