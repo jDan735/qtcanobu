@@ -16,7 +16,7 @@ Result::~Result()
 void Result::changeWindowMode(QString result, QString item, QString filename){
     ui->label_2->setText("<span style='font-size:22pt;'>" + result + "</span>");
     ui->label->setText("<p><img src=':/main/img/main/" + filename + "'/></p>");
-    ui->textBrowser->setText("У бота был" + item);
+    ui->textBrowser->setText("<span style='font-size:10pt;'>Bot has chosen " + item + "</span>");
 }
 
 void Result::on_pushButton_clicked()

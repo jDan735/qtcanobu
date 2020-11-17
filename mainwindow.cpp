@@ -49,17 +49,17 @@ void game(int user){
     for (int i = 0; i < 3; ++i){
         if (bot == i){
             QString results[3][2] = {
-                {"Победа", "Misc_Birthday_Cake.png"},
-                {"Проигрыш", "Misc_R.I.P.png"},
-                {"Ничья", "Server_MediaAddonServer.png"}
+                {"Victory", "Misc_Birthday_Cake.png"},
+                {"Draw", "Misc_R.I.P.png"},
+                {"Loss", "Server_MediaAddonServer.png"}
             };
-            QString objects[3] = {" камень", "и ножницы", "а бумага"};
+            QString objects[3] = {"rock", "scissors", "paper"};
 
             Result *popup = new Result(0);
             popup->changeWindowMode(results[massive[user][bot]][0], objects[bot], results[massive[user][bot]][1]);
             popup->setModal(true);
-            popup->setWindowTitle("Результат");
-            popup->setWindowIcon(QIcon(":/main/img/main/" + results[massive[user][bot]][1]));
+            popup->setWindowTitle("Result");
+            popup->setWindowIcon(QIcon(":/main/img/main/Prefs_Menu.png"));
             popup->exec();
             break;
         }

@@ -70,7 +70,7 @@
     <rect>
      <x>80</x>
      <y>50</y>
-     <width>121</width>
+     <width>171</width>
      <height>17</height>
     </rect>
    </property>
@@ -83,7 +83,7 @@
     <string notr="true">color:#555</string>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#424242;&quot;&gt;Version 5.15.0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#424242;&quot;&gt;Version 5.15.1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QTextBrowser" name="textBrowser">
