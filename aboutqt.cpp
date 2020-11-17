@@ -6,6 +6,8 @@ AboutQt::AboutQt(QWidget *parent) :
     ui(new Ui::AboutQt)
 {
     ui->setupUi(this);
+    QString qtver = "Version " + QString::number(QT_VERSION_MAJOR) + "." + QString::number(QT_VERSION_MINOR) + "." + QString::number(QT_VERSION_PATCH);
+    ui->label_3->setText(qtver);
 }
 
 AboutQt::~AboutQt()
