@@ -14,9 +14,9 @@ Result::~Result()
 }
 
 void Result::changeWindowMode(QString result, QString item, QString filename){
-    ui->label_2->setText("<span style='font-size:22pt;'>" + result + "</span>");
+    ui->label_2->setText(result);
     ui->label->setText("<p><img src=':/main/img/main/" + filename + "'/></p>");
-    ui->textBrowser->setText("<span style='font-size:10pt;'>Bot has chosen " + item + "</span>");
+    ui->textBrowser->setText("Bot has chosen " + item);
 }
 
 void Result::on_pushButton_clicked()

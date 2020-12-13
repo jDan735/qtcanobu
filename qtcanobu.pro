@@ -9,11 +9,11 @@ CONFIG += c++11
 # In order to do so, uncomment the following line.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-DEFINES += VERSION="1.1"
+DEFINES += VERSION="1.2"
 
 win32:{
     RC_ICONS = $$PWD/img/main/cut.ico
-    VERSION = 1.1
+    VERSION = 1.2
     QMAKE_TARGET_COMPANY = Kanobu Inc.
     QMAKE_TARGET_PRODUCT = QtCanobu
     QMAKE_TARGET_DESCRIPTION = Rewritten to c++ Qt port of original kanobu
