@@ -26,5 +26,6 @@ private:
     Ui::MainWindow *ui;
     void showAboutApp();
     void showAboutQt();
+    void close_app();
 };
 #endif // MAINWINDOW_H

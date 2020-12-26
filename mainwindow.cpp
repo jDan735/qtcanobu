@@ -14,11 +14,16 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     connect(ui->actionAbout_QtCanobu, &QAction::triggered, this, &MainWindow::showAboutApp);
     connect(ui->actionAbout_Qt, &QAction::triggered, this, &MainWindow::showAboutQt);
+    connect(ui->actionExit, &QAction::triggered, this, &MainWindow::close_app);
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::close_app(){
+    exit(1);
 }
 
 void MainWindow::showAboutApp(){

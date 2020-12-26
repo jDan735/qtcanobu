@@ -140,6 +140,13 @@
     <addaction name="actionAbout_Qt"/>
     <addaction name="actionAbout_QtCanobu"/>
    </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFile"/>
    <addaction name="menuHelp"/>
   </widget>
   <action name="actionAbout_Qt">
@@ -158,6 +165,15 @@
    </property>
    <property name="text">
     <string>About QtCanobu</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/main/img/main/Action_Stop_1_64.png</normaloff>:/main/img/main/Action_Stop_1_64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quit</string>
    </property>
   </action>
  </widget>

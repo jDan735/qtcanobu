@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="main">
+	<file>img/main/Action_Stop_1_64.png</file>
     <file>img/main/qt</file>
     <file>img/main/cut.hvif</file>
     <file>img/main/Misc_Scroll.png</file>
