@@ -16,7 +16,7 @@ Result::~Result()
 void Result::changeWindowMode(QString result, QString item, QString filename){
     ui->label_2->setText(result);
     ui->label->setText("<p><img src=':/main/img/main/" + filename + "'/></p>");
-    ui->textBrowser->setText("Bot has chosen " + item);
+    ui->label_3->setText("Bot has chosen " + item);
 }
 
 void Result::on_pushButton_clicked()
