@@ -36,60 +36,19 @@ class SQLite_Wrapper {
             query.exec("INSERT INTO results VALUES ('" + username + "'," + user_str + ", " + bot_str + "," + result_str + ");");
         }
 
-//        void insert(QString username, int result)
-//        {
-//            int rc;
-//            QString sql_str;
-//            const char *sql;
-//            char *zErrMsg = 0;
+        QSqlQuery select()
+        {
+            QSqlQuery query;
+            query.exec("SELECT * FROM results");
 
-//            QString result_str = QString::number(result);
+            return query;
+        }
 
-//            sql_str = "INSERT INTO results VALUES ('" + username + "', " + result_str + ");";
-//            sql = sql_str.toStdString().c_str();
-
-//            rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
-
-//            if(rc != SQLITE_OK){
-//                cout << "SQL error: " << zErrMsg << endl;
-//                sqlite3_free(zErrMsg);
-//            } else {
-//                cout << "Records created successfully" << endl;
-//            }
-//        }
-
-//        void show()
-//        {
-//            int rc;
-//            string sql_str;
-//            const char *sql;
-//            char *zErrMsg = 0;
-
-//            sql_str = "SELECT * FROM results";
-//            sql = sql_str.c_str();
-
-//            rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
-
-//            if(rc != SQLITE_OK){
-//                cout << "SQL error: " << zErrMsg << endl;
-//                sqlite3_free(zErrMsg);
-//            } else {
-//                cout << "Select created successfully" << endl;
-//            }
-
-//            cout << "ban" << endl;
-//        }
-
-//        static int callback(void *NotUsed, int argc, char **argv, char **azColName)
-//        {
-//            for(int i = 0; i < argc; i++) {
-//                cout << azColName[i] << " = " << argv[i] ? argv[i] : "NULL";
-//                cout << "   ";
-//            }
-
-//            cout << endl;
-//            return 0;
-//        }
+        void clean()
+        {
+            QSqlQuery query;
+            query.exec("DELETE FROM results");
+        }
 
     private:
         QSqlDatabase db;

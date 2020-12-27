@@ -25,9 +25,12 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    SQLite_Wrapper sq;
+    void showFolderWithBD();
+    void clean();
     void showAboutApp();
     void showAboutQt();
     void close_app(); 
-    SQLite_Wrapper sq;
+    void showStatistics();
 };
 #endif // MAINWINDOW_H

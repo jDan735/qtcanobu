@@ -24,7 +24,8 @@ SOURCES += \
     aboutqt.cpp \
     main.cpp \
     mainwindow.cpp \
-    result.cpp
+    result.cpp \
+    statistics.cpp
 
 HEADERS += \
     aboutapp.h \
@@ -32,13 +33,15 @@ HEADERS += \
     mainwindow.h \
     result.h \
     aboutapp.h \
+    statistics.h \
     table.h
 
 FORMS += \
     aboutqt.ui \
     mainwindow.ui \
     aboutapp.ui \
-    result.ui
+    result.ui \
+    statistics.ui
 
 RESOURCES += \
     resources.qrc

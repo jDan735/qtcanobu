@@ -3,9 +3,12 @@
 #include "aboutapp.h"
 #include "aboutqt.h"
 #include "result.h"
+#include "statistics.h"
 
 #include <QDialog>
+#include <QDesktopServices>
 #include <ctime>
+#include <QUrl>
 
 using namespace std;
 
@@ -18,6 +21,10 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->actionAbout_Qt, &QAction::triggered, this, &MainWindow::showAboutQt);
     connect(ui->actionExit, &QAction::triggered, this, &MainWindow::close_app);
 
+    connect(ui->actionShow_results, &QAction::triggered, this, &MainWindow::showStatistics);
+    connect(ui->actionOpen_folder_with_DB, &QAction::triggered, this, &MainWindow::showFolderWithBD);
+    connect(ui->actionReset_results, &QAction::triggered, this, &MainWindow::clean);
+
     sq.open("results.db");
     sq.table();
 }
@@ -27,8 +34,14 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::close_app(){
+void MainWindow::close_app()
+{
     exit(1);
+}
+
+void MainWindow::clean()
+{
+    sq.clean();
 }
 
 void MainWindow::showAboutApp(){
@@ -41,6 +54,16 @@ void MainWindow::showAboutQt(){
     AboutQt *popup = new AboutQt(this);
     popup->setModal(true);
     popup->show();
+}
+
+void MainWindow::showStatistics(){
+    statistics *popup = new statistics(this);
+    popup->setModal(true);
+    popup->show();
+}
+
+void MainWindow::showFolderWithBD(){
+    QDesktopServices::openUrl(QUrl("."));
 }
 
 void game(int user, SQLite_Wrapper sq){
