@@ -14,5 +14,10 @@
     <file>img/main/Misc_R.I.P.png</file>
     <file>img/main/Server_MediaAddonServer.png</file>
     <file>img/main/Prefs_Menu.png</file>
+	
+	<file>img/menu/view-statistics.svg</file>
+	<file>img/menu/edit-delete.svg</file>
+	<file>img/menu/application-exit.svg</file>
+	<file>img/menu/document-open.svg</file>
   </qresource>
 </RCC>

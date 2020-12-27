@@ -130,7 +130,7 @@
      <x>0</x>
      <y>0</y>
      <width>241</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuHelp">
@@ -183,7 +183,7 @@
   <action name="actionExit">
    <property name="icon">
     <iconset resource="resources.qrc">
-     <normaloff>:/main/img/main/Action_Stop_1_64.png</normaloff>:/main/img/main/Action_Stop_1_64.png</iconset>
+     <normaloff>:/main/img/menu/application-exit.svg</normaloff>:/main/img/menu/application-exit.svg</iconset>
    </property>
    <property name="text">
     <string>Quit</string>
@@ -192,7 +192,7 @@
   <action name="actionOpen_DB">
    <property name="icon">
     <iconset resource="resources.qrc">
-     <normaloff>:/main/img/main/Folder_generic.png</normaloff>:/main/img/main/Folder_generic.png</iconset>
+     <normaloff>:/main/img/menu/document-open.svg</normaloff>:/main/img/menu/document-open.svg</iconset>
    </property>
    <property name="text">
     <string>Open DB</string>
@@ -201,7 +201,7 @@
   <action name="actionShow_results">
    <property name="icon">
     <iconset resource="resources.qrc">
-     <normaloff>:/main/img/main/App_TV_2.png</normaloff>:/main/img/main/App_TV_2.png</iconset>
+     <normaloff>:/main/img/menu/view-statistics.svg</normaloff>:/main/img/menu/view-statistics.svg</iconset>
    </property>
    <property name="text">
     <string>Show results</string>
@@ -210,7 +210,7 @@
   <action name="actionReset_results">
    <property name="icon">
     <iconset resource="resources.qrc">
-     <normaloff>:/main/img/main/Trash_Full.png</normaloff>:/main/img/main/Trash_Full.png</iconset>
+     <normaloff>:/main/img/menu/edit-delete.svg</normaloff>:/main/img/menu/edit-delete.svg</iconset>
    </property>
    <property name="text">
     <string>Reset results</string>
@@ -219,10 +219,10 @@
   <action name="actionOpen_folder_with_DB">
    <property name="icon">
     <iconset resource="resources.qrc">
-     <normaloff>:/main/img/main/Folder_generic.png</normaloff>:/main/img/main/Folder_generic.png</iconset>
+     <normaloff>:/main/img/menu/document-open.svg</normaloff>:/main/img/menu/document-open.svg</iconset>
    </property>
    <property name="text">
-    <string>Open folder with DB</string>
+    <string>Open DB folder</string>
    </property>
   </action>
   <action name="actionSave_DB_as">
