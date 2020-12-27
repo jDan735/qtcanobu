@@ -1,7 +1,11 @@
 <RCC>
   <qresource prefix="main">
-	<file>img/main/Action_Stop_1_64.png</file>
+    <file>img/main/Action_Stop_1_64.png</file>
     <file>img/main/qt</file>
+    <file>img/main/App_TV_2.png</file>
+    <file>img/main/Trash_Full.png</file>
+    <file>img/main/Document_Save.png</file>
+    <file>img/main/Folder_generic.png</file>
     <file>img/main/cut.hvif</file>
     <file>img/main/Misc_Scroll.png</file>
     <file>img/main/ruby.hvif</file>
