@@ -4,8 +4,11 @@
 #include "aboutqt.h"
 #include "result.h"
 
+#include <iostream>
 #include <QDialog>
 #include <ctime>
+
+using namespace std;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -15,6 +18,9 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->actionAbout_QtCanobu, &QAction::triggered, this, &MainWindow::showAboutApp);
     connect(ui->actionAbout_Qt, &QAction::triggered, this, &MainWindow::showAboutQt);
     connect(ui->actionExit, &QAction::triggered, this, &MainWindow::close_app);
+
+    sq.open("results.db");
+    sq.table();
 }
 
 MainWindow::~MainWindow()
@@ -38,7 +44,7 @@ void MainWindow::showAboutQt(){
     popup->show();
 }
 
-void game(int user){
+void game(int user, SQLite_Wrapper sq){
     srand(time(0));
     int bot = 1 + rand() % 3;
 
@@ -60,6 +66,10 @@ void game(int user){
             };
             QString objects[3] = {"rock", "scissors", "paper"};
 
+            cout << massive[user][bot] << endl;
+            sq.insert("TEST_USER", massive[user][bot], user, bot);
+
+
             Result *popup = new Result(0);
             popup->changeWindowMode(results[massive[user][bot]][0], objects[bot], results[massive[user][bot]][1]);
             popup->setModal(true);
@@ -73,15 +83,15 @@ void game(int user){
 
 void MainWindow::on_pushButton_1_clicked()
 {
-    game(1);
+    game(1, sq);
 }
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    game(2);
+    game(2, sq);
 }
 
 void MainWindow::on_pushButton_3_clicked()
 {
-    game(3);
+    game(3, sq);
 }

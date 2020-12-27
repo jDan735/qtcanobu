@@ -1,5 +1,4 @@
-QT       += core gui \
-            uitools
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -31,8 +30,9 @@ HEADERS += \
     aboutapp.h \
     aboutqt.h \
     mainwindow.h \
-    result.h
-    aboutapp.h
+    result.h \
+    aboutapp.h \
+    table.h
 
 FORMS += \
     aboutqt.ui \

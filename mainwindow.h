@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "table.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -26,6 +27,7 @@ private:
     Ui::MainWindow *ui;
     void showAboutApp();
     void showAboutQt();
-    void close_app();
+    void close_app(); 
+    SQLite_Wrapper sq;
 };
 #endif // MAINWINDOW_H
