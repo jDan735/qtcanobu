@@ -4,7 +4,6 @@
 #include "aboutqt.h"
 #include "result.h"
 
-#include <iostream>
 #include <QDialog>
 #include <ctime>
 
@@ -66,7 +65,6 @@ void game(int user, SQLite_Wrapper sq){
             };
             QString objects[3] = {"rock", "scissors", "paper"};
 
-            cout << massive[user][bot] << endl;
             sq.insert("TEST_USER", massive[user][bot], user, bot);
 
 
